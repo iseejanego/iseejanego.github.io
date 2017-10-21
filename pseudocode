@@ -1,0 +1,68 @@
+<header>
+
+Logo - click to toggle background color
+Name
+
+</header>
+
+<nav>
+
+About - click to ease scroll to #about section
+Work - click to ease scroll to #work section
+Contact - click to ease scroll to #contact section
+
+</nav>
+
+<section id = about>
+
+<div id = bio-pic>
+Image
+</div>
+
+<div id = bio-text>
+<p>Short about section</p>
+</div>
+
+</section>
+
+<section id = work>
+
+<div id = display> - Create "entries" in separate html file, then save content to Firebase and pass into Handlebars template
+Make visible after clicking on thumbnail (slide?)
+Handlebars template:
+-image
+-Title
+-body
+</div>
+
+<div id = gallery>
+Thumbnails - click on a thumbnail, open display info
+</div>
+
+</section>
+
+<section id = contact>
+
+<form id = email>
+<input id = name>
+<input id = email>
+<input id = message-body>
+<button>Send</button>
+</form>
+
+<p id = confirmation>Thanks! Your message has been sent.</p>
+
+</section>
+
+<section id = social-media>
+
+<div id = social-links>
+<a>Twitter link</a>
+<a>Instagram link</a>
+</div>
+
+<div id = live-feed>
+Instagram API here
+</div>
+
+</section>

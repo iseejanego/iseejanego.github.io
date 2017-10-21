@@ -1,0 +1,56 @@
+body{
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Source Serif Pro', serif;
+	background-color: #F7FE2E;
+}
+
+a:link{
+	text-decoration: none;
+	color: #FF4000;
+}
+
+a:visited{
+	color:#2E9AFE;
+}
+
+a:hover{
+	border-bottom: 2px dotted gray;
+}
+
+a:active{
+	border: 2px dotted gray;
+	padding: 0px 2px;
+}
+
+.nav-links, #gallery, #social-links{
+	list-style: none;
+	padding: 0;
+}
+
+.nav-links li{
+	display: inline;
+	padding: 20px;
+}
+
+header, nav, section{
+	background-color: white;
+	width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.about-div, .social-div{
+	width: 300px;
+	display: inline-grid;
+	text-align: left;
+	margin-right: 10px;
+}
+
+#gallery li{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 2px dotted gray;
+	margin: 10px;
+}

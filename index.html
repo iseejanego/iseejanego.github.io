@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>See Jane Go</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<header>
+	<h1>Image Goes Here</h1>
+	<h3>Jane Go : Graphic Designer</h3>
+</header>
+
+<nav>
+	<ul class="nav-links">
+		<li><a href="#about">ABOUT</a></li>
+		<li><a href="#work">WORK</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+	</ul>
+</nav>
+
+<section id="about">
+	<div class="about-div">
+		<h1>Image Goes Here</h1>
+	</div>
+
+	<div class="about-div">
+		<h2>Hi, I'm Jane</h2>
+		<p>This is a brief description about me and my job. I'll mention that I do graphic design, research, copywriting, marketing, video production, and web design in some interesting way. Hobbies are flying a drone and eating candy.</p>
+	</div>
+</section>
+
+<section id="work">
+	<div class="work-div" data-id="display">
+		<script id="display-template" type="text/x-handlebars-template">
+			<span>
+				<h2>{{title}}</h2>
+				<h4>{{subtitle}}</h4>
+				<p>{{description}}</p>
+			</span>
+			
+			<span>
+				<img src="{{photo1}}">
+				<img src="{{photo2}}">
+				<img src="{{photo3}}">
+			</span>
+
+			<span>
+				<a href=#>Prev</a> / <a href=#>Next</a>
+			</span>
+		</script>
+	</div>
+
+	<div class="work-div">
+		<ul id="gallery">
+			<li><a href="#display">THUMBNAIL</a></li>
+			<li><a href="#display">THUMBNAIL</a></li>
+			<li><a href="#display">THUMBNAIL</a></li>
+		</ul>
+	</div>
+</section>
+
+<section id="social">
+	<div class="social-div">
+		<ul id="social-links">
+			<li><a href=#>Email</a></li>
+			<li><a href="https://twitter.com/themoviesalone">Twitter</a></li>
+			<li><a href="https://www.instagram.com/themoviesalone/">Instagram</a></li>
+		</ul>
+	</div>
+
+	<div class="social-div">
+		<div id="instafeed"></div>
+	</div>
+
+</section>
+
+
+
+</body>
+</html>
