@@ -23,7 +23,7 @@ a:active{
 	padding: 0px 2px;
 }
 
-.nav-links, #gallery, #social-links{
+.nav-links, #gallery{
 	list-style: none;
 	padding: 0;
 }
@@ -53,4 +53,9 @@ header, nav, section{
 	height: 200px;
 	border: 2px dotted gray;
 	margin: 10px;
+}
+
+#instafeed{
+	height: 310px;
+	overflow: hidden;
 }
