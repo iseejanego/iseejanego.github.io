@@ -33,31 +33,41 @@
 </section>
 
 <section id="work">
-	<div class="work-div" data-id="display">
-		<script id="display-template" type="text/x-handlebars-template">
-			<span>
-				<h2>{{title}}</h2>
-				<h4>{{subtitle}}</h4>
-				<p>{{description}}</p>
-			</span>
-			
-			<span>
-				<img src="{{photo1}}">
-				<img src="{{photo2}}">
-				<img src="{{photo3}}">
-			</span>
+
+	<div id="display">
+			<div class="display-div">
+				<img id="display-image" src="">
+			</div>
+
+			<div class="display-div" id="display-text">
+				<h2></h2>
+				<p></p>
+			</div>
 
 			<span>
-				<a href=#>Prev</a> / <a href=#>Next</a>
+				<a href="#display" id="previous">Prev</a> / <a href="#display" id="next">Next</a>
 			</span>
-		</script>
 	</div>
 
 	<div class="work-div">
 		<ul id="gallery">
-			<li><a href="#display">THUMBNAIL</a></li>
-			<li><a href="#display">THUMBNAIL</a></li>
-			<li><a href="#display">THUMBNAIL</a></li>
+
+				<li class="thumb">
+					<a href="#display">
+						<img src="images/test2.jpg">
+						<h2>Another Title</h2>
+						<p>More descriptive text</p>
+					</a>
+				</li>
+
+				<li class="thumb">
+					<a href="#display">
+						<img src="images/test.jpg">
+						<h2>Title</h2>
+						<p>Descriptive text</p>
+					</a>
+				</li>
+
 		</ul>
 	</div>
 </section>
@@ -76,6 +86,8 @@
 </section>
 
 <script src="js/instafeed.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/handlebars-v4.0.11.js"></script>
 <script src="js/main.js"></script>
 
 </body>

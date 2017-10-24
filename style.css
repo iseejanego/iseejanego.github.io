@@ -47,12 +47,33 @@ header, nav, section{
 	margin-right: 10px;
 }
 
+#display-image{
+	width: 500px;
+}
+
+#display-text{
+	width: 200px;
+}
+
 #gallery li{
 	display: inline-block;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	border: 2px dotted gray;
 	margin: 10px;
+}
+
+.thumb img{
+	width: 150px;
+	height:150px;
+}
+
+.thumb h2, .thumb p{
+	display: none;
+}
+
+.thumb a:hover{
+	border: none;
 }
 
 #instafeed{
