@@ -11,18 +11,24 @@ feed.run();
 //hide display section
 $('#display').hide();
 
-//array of image paths
-var images = ['images/test.jpg', 'images/test2.jpg'];
-var currentPosition = 0;
-
 //click thumbnail, show display section
 $('.thumb').on('click', function(e){
 	e.preventDefault();
 	$('#display').slideDown();
 
 //change display image to selected thumbnail image
-	var currentImage = $(this).find('img').attr('src');
-	$('#display-image').attr('src', currentImage);
+	$('#display-image').attr('src', $(this).find('img').data('src'));
+
+//if there are multiple images to display
+//clear any src attributes
+	$('#second-image').attr('src', '');
+	$('#third-image').attr('src', '');
+	$('#fourth-image').attr('src', '');
+
+//display images for currently selected thumb
+	$('#second-image').attr('src', $(this).find('.second').data('src'));
+	$('#third-image').attr('src', $(this).find('.third').data('src'));
+	$('#fourth-image').attr('src', $(this).find('.fourth').data('src'));
 
 //change display text to selected thumbnail text
 	var displayText = $('#display-text');
@@ -31,32 +37,23 @@ $('.thumb').on('click', function(e){
 
 });
 
+//scroll easing
+ $("a").on('click', function(e) {
 
-//next link, go to next image in gallery
-$('#next').on('click', function(){
-	//update currentposition
-	currentPosition += 1;
-	//update source
-	$('#display-image').attr('src', images[currentPosition]);
-	//make sure previous button is enabled
-	$('#prev').prop('disabled', false);
-	//if currentPosition is at the last image, disable the next button
-	if (currentPosition === images.length - 1){
-		$('#next').prop('disabled', true);
-	}
-});
+// make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      e.preventDefault();
 
-//previous link, go to previous image in gallery
-$('#previous').on('click', function(){
-	//update currentPosition
-	currentPosition -= 1;
-	//update source
-	$('#display-image').attr('src', images[currentPosition]);
-	//make sure the next button is enabled
-	$('#next').prop('disabled', false);
-	//if currentPosition is at the first image, disable the previous button
-	if (currentPosition === 0){
-		$('#prev').prop('disabled', true);
-	}
+// Store hash
+      var hash = this.hash;
 
-});
+// optional number (800) specifies the number of milliseconds it takes to scroll
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+// add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // end if
+  });

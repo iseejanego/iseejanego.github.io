@@ -33,6 +33,11 @@ a:active{
 	padding: 20px;
 }
 
+#social-links img{
+	width: 50px;
+	height: 50px;
+}
+
 header, nav, section{
 	background-color: white;
 	width: 800px;
@@ -40,26 +45,43 @@ header, nav, section{
 	padding: 10px;
 }
 
-.about-div, .social-div{
-	width: 300px;
-	display: inline-grid;
-	text-align: left;
-	margin-right: 10px;
+header img{
+	width:200px;
+	height:200px;
+	margin-top: 10px;
 }
 
-#display-image{
-	width: 500px;
+.about-div{
+	display: inline-block;
+	text-align: left;
+	padding: 20px;
+	margin-top: 15px;
+}
+
+#about-text{
+	width: 200px;
+}
+
+.display-div{
+	display: inline-block;
+}
+
+#display-image, #second-image, #third-image, #fourth-image{
+	width: 700px;
 }
 
 #display-text{
-	width: 200px;
+	width: 600px;
+	text-align: left;
+	margin-left: -90px;
+	margin-top: 10px;
 }
 
 #gallery li{
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	border: 2px dotted gray;
+	border: 2px solid #F7FE2E;
 	margin: 10px;
 }
 
@@ -68,7 +90,7 @@ header, nav, section{
 	height:150px;
 }
 
-.thumb h2, .thumb p{
+.thumb h2, .thumb p, .second, .third, .fourth{
 	display: none;
 }
 
@@ -79,4 +101,5 @@ header, nav, section{
 #instafeed{
 	height: 310px;
 	overflow: hidden;
+	margin-bottom: 15px;
 }
